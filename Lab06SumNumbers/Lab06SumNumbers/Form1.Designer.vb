@@ -22,9 +22,41 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.btnNumbers = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnNumbers
+        '
+        Me.btnNumbers.Location = New System.Drawing.Point(40, 118)
+        Me.btnNumbers.Name = "btnNumbers"
+        Me.btnNumbers.Size = New System.Drawing.Size(88, 23)
+        Me.btnNumbers.TabIndex = 0
+        Me.btnNumbers.Text = "Enter Numbers"
+        Me.btnNumbers.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(169, 118)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 1
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(298, 261)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnNumbers)
+        Me.Name = "Form1"
+        Me.Text = "Sum of Numbers"
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents btnNumbers As Button
+    Friend WithEvents btnExit As Button
 End Class
